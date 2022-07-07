@@ -3,8 +3,8 @@ An application which enables you to get daily stock prices cryptocurrency update
 
 
 ***
-### [Deployed Version]()
-### [Demo Video]()
+### [Deployed Version](https://sage-sprite-225055.netlify.app/)
+### [Demo Video](https://www.loom.com/share/a129d454d83644398d5b728694eaba5a)
  ***
 ## Built With
 * React
