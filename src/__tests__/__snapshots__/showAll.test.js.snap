@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ensure app renders as expected renders the Details page 1`] = `Promise {}`;
+
+exports[`Ensure app renders as expected renders the home page 1`] = `Promise {}`;

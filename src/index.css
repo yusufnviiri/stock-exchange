@@ -1,0 +1,174 @@
+body {
+  background-color: rgb(202, 44, 155);
+}
+
+.App {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(202, 44, 155);
+}
+
+.headline {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(33.33%, 1fr));
+  grid-auto-rows: 8%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #cff;
+}
+
+.itemSpan {
+  position: absolute;
+  top: 50%;
+  font-size: x-small;
+  color: rgb(171, 198, 219);
+  gap: 10px;
+}
+
+.colDiv:nth-child(odd) {
+  background-color: rgb(202, 44, 155);
+  width: 100%;
+  height: 100%;
+}
+
+.colDiv:nth-child(even) {
+  background-color: rgb(172, 40, 117);
+  width: 100%;
+  height: 100%;
+}
+
+.colDiv button {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: right;
+  font-size: 20px;
+  display: flex;
+  color: #fff;
+  justify-content: end;
+  background: transparent;
+}
+
+.navBar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3%;
+  margin-right: 10px;
+}
+
+.navBar ul li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navBar ul li a {
+  color: #fff;
+}
+
+.allDetails p {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  height: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.allDetails p:nth-child(even) {
+  background-color: rgb(133, 42, 42);
+}
+
+.symbolName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  background-color: saddlebrown;
+  color: #fff;
+  height: 6em;
+  margin: 0;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.selectedData {
+  background-color: rgba(175, 25, 130, 0.2);
+}
+
+.symbolName h3 {
+  padding-right: 40px;
+}
+
+.selectedData button {
+  color: #fff;
+  background-color: rgb(202, 44, 155);
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .symbolName {
+    font-size: 20px;
+  }
+
+  .allDetails p {
+    height: 3em;
+    display: flex;
+  }
+
+  .data {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colDiv:nth-child(even) {
+    background-color: rgb(202, 44, 155);
+    width: 100%;
+    height: 100%;
+  }
+
+  .colDiv:nth-child(odd) {
+    background-color: rgb(172, 40, 117);
+    width: 100%;
+    height: 100%;
+  }
+
+  .colDiv button {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+}
