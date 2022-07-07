@@ -22,7 +22,7 @@ export const fetchStockData = () => async (dispatch) => {
   const response = await fetch(baseUrl);
   const data = await response.json();
 
-  dispatch(getstockdata(data.slice(200, 254)))
+  dispatch(getstockdata(data.slice(0, 14)))
     .catch((error) => { console.log(error); });
 };
 

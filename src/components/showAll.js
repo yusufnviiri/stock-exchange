@@ -27,7 +27,7 @@ function ShowAll() {
 
   stockSymbol.length > 1
     ? stockSymbol.map((stock) => (
-      <div key={stock.symbol} className="col-sm-4 colDiv">
+      <div key={stock.symbol} className="colDiv">
         <button
           className="itemButtons"
           type="button"
